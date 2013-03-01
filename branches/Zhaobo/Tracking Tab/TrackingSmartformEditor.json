@@ -1,0 +1,133 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Tracking"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "bold_smartforms"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Edit Form"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Edit Form"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='fe-mode-design']/div[2]/div/span/button"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "switchToWindow",
+      "name": "null"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='fe-mode-design']/div[2]/div/span/button"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "td.fb_fieldeditor_checkbox > input[type=\"checkbox\"]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "td.fb_fieldeditor_checkbox > input[type=\"checkbox\"]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//button[@type='button']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.fe-design-toolbar.ui-corner-top"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='fe-mode-design']/div[2]/div/span[2]/button"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='fe-mode-design']/div[2]/div/span[2]/button[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='fe-mode-design']/div[2]/div/span/button[2]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "500"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='fe-mode-design']/div[2]/div/span[3]/button[2]"
+      }
+    },
+    {
+      "type": "waitForText",
+      "locator": {
+        "type": "css selector",
+        "value": "div.fe-plugin-templates-content-titlebar"
+      },
+      "text": "Template"
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    }
+  ]
+}

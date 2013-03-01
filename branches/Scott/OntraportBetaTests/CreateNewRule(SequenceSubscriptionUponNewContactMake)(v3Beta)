@@ -1,0 +1,218 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://app.ontraport.com/login.html"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "username"
+      },
+      "text": "colton@ontraport.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "password"
+      },
+      "text": "5cQdQ7wEnn"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "login_button"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//aside[@id='ussr-chrome-sidebar']//span[.='Contacts']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//aside[@id='ussr-chrome-sidebar']/section/nav/ul/li[2]/a[3]/span[3]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//aside[@id='ussr-chrome-sidebar']//span[.='Rules']"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "id",
+        "value": "ontraport_panel_action_new"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "ontraport_panel_action_new"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-helper-field-display-rule-editor']//div[.='WHEN THIS HAPPENS:']"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-helper-field-display-rule-editor']/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[2]/div/div/input"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@class='ussr-component-drilldownselect-ul']//div[.='Contact is created']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-helper-field-display-rule-editor']/div[2]/div[2]/div/div[1]/div/div[2]/div[2]/div[2]/div/div/input"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-helper-field-display-rule-editor']/div[2]/div[2]/div/div[1]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[3]/ul/li[4]/div"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-helper-field-display-rule-editor']/div[2]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/span/span[2]/div/div/input"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-helper-field-display-rule-editor']//div[.='Test123']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-helper-field-display-rule-editor']/div[3]/div[2]/div/div[1]/div/div[2]/div[2]/div[2]/div/div/input"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-helper-field-display-rule-editor']//div[.='Add Contact to Sequence']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-helper-field-display-rule-editor']/div[3]/div[2]/div/div[1]/div/div[2]/div[2]/div[1]/span/span[2]/div/div/input"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-helper-field-display-rule-editor']//div[.='Test123']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']/div[3]/div/div[3]/div/div/div/input"
+      },
+      "text": "TestRule123"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//button[normalize-space(.)='Save']"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "5000"
+    },
+    {
+      "type": "assertTextPresent",
+      "text": "TestRule123"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//tbody[@class='ussr-component-collection-body']/tr/td[1]/a/span[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Delete Rule"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-dialog-buttons']//button[.='Ok']"
+      }
+    }
+  ]
+}

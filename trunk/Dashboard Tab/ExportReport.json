@@ -1,0 +1,78 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Dashboard"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='graph']/div/div[1]/div/div/div[2]/div/div[1]/div[2]/img"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='graph']/div/div[1]/div/div/div[3]/div/div[1]/div[2]/img"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='graph']/div/div[1]/div/div/div[1]/div/div[1]/div[2]/img"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='graph']/div/div[1]/div/div/div[1]/div/div[2]/div[1]/img"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='graph']/div/div[1]/div/div/div[3]/div/div[2]/div[2]/img"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='graph']/div/div[1]/div/div/div[4]/div/div[1]/div[1]/img"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='graph']/div/div[1]/div/div/div[5]/div/div[1]/div[2]/img"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='graph']/div/div[1]/div/div/div[5]/div/div[2]/div[1]/img"
+      }
+    }
+  ]
+}

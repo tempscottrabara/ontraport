@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www1.moon-ray.com/v2.4/login_processor.php?pthrough=*4tsgayhgdfga&login=leumasc1@gmail.com&pass=$P$BqAnutfuRZdnX6yL5Vm2Rj9KA/Ku5Y0" />
+<title>ticket5047</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ticket5047</td></tr>
+</thead><tbody>
+<!--come design changed, cannot find anymore-->
+<!--Send an email-->
+<tr>
+	<td>open</td>
+	<td>http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Autopilot</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=action_btn_Add_Sequence</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=center &gt; table &gt; tbody &gt; tr &gt; td &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pub_name</td>
+	<td>Send immediate email</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=drip_name</td>
+	<td>send_immediate_email</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pub_description</td>
+	<td>For selenium testing - This sequence sends one email immediately then stops</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=center &gt; table &gt; tbody &gt; tr &gt; td &gt; div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//input[@type='text'])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='text'])[7]</td>
+	<td>Selenium Test Email</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=plain_text_box</td>
+	<td>This is a selenium test email.&nbsp;&nbsp;It was originally created as part of a test for ticket 5047.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@id='save_button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>exact:This message has some issues that you may want to resolve before sending.How?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[type=&quot;button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn2</td>
+	<td></td>
+</tr>
+<!---->
+<!--Import the contacts and sub them to the sequence-->
+<tr>
+	<td>open</td>
+	<td>http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Import Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Import')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=p</td>
+	<td>exact:Does this Look Correct?</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btn_continue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=cb_expect</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cb_expect</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cb_nobuy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cb_bounce</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cb_zero</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.cb_button_continue.cb_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=(//input[@name='dup2'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='dup2'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=#csv_input_updateSequence &gt; select</td>
+	<td>label=Enter Default Value</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=sequence_unselected</td>
+	<td>label=send_immediate_email</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;Select&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=action_btn_Import_Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>400000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>!<br />Import Successful. (5 imported)</td>
+	<td></td>
+</tr>
+<!---->
+<!--Check the contacts' logs for the email send-->
+<tr>
+	<td>type</td>
+	<td>//input[@type='TEXT']</td>
+	<td>thisisatest@toinasdoinasoidn.org</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>//input[@type='TEXT']</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[2]/td[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[6]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotText</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[6]/div/div[2]/table/tbody/tr[2]/td/div</td>
+	<td>There are no items to display</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='TEXT']</td>
+	<td>colton@sendpepper.com</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>//input[@type='TEXT']</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[2]/td[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[6]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotText</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[6]/div/div[2]/table/tbody/tr[2]/td/div</td>
+	<td>There are no items to display</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='TEXT']</td>
+	<td>slayman@sendpepper.com</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>//input[@type='TEXT']</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[2]/td[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[6]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotText</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[6]/div/div[2]/table/tbody/tr[2]/td/div</td>
+	<td>There are no items to display</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='TEXT']</td>
+	<td>iliketodoseleniumtests@theyarefun.com</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>//input[@type='TEXT']</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[2]/td[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[6]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotText</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[6]/div/div[2]/table/tbody/tr[2]/td/div</td>
+	<td>There are no items to display</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='TEXT']</td>
+	<td>thisisdefinitelyatest@seriouslyman.com</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>//input[@type='TEXT']</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[2]/td[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[6]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotText</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[6]/div/div[2]/table/tbody/tr[2]/td/div</td>
+	<td>There are no items to display</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='step_container_div']/table/tbody/tr[20]/td[2]/span</td>
+	<td></td>
+</tr>
+<!---->
+<!--Clean Up - remove the sequence-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Autopilot</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='TEXT']</td>
+	<td>send_immediate_email</td>
+</tr>
+<tr>
+	<td>keyDown</td>
+	<td>//input[@type='TEXT']</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=.//*[@id='step_container_div']/table/tbody/tr[2]/td[1]/a[3]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,108 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Autopilot"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "#action_btn_Add_Sequence"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "css selector",
+        "value": "center > table > tbody > tr > td > div"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "pub_name"
+      },
+      "text": "Send immediate email"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "drip_name"
+      },
+      "text": "send_immediate_email"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "pub_description"
+      },
+      "text": "For selenium testing - This sequence sends one email immediately then stops"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "center > table > tbody > tr > td > div"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "(//input[@type='text'])[7]"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "(//input[@type='text'])[7]"
+      },
+      "text": "Selenium Test Email"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "plain_text_box"
+      },
+      "text": "This is a selenium test email.  It was originally created as part of a test for ticket 5047."
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "exact:This message has some issues that you may want to resolve before sending.How?"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "input[type=\"button\"]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1500"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "input.btn2"
+      }
+    }
+  ]
+}

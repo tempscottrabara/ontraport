@@ -1,0 +1,201 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Contacts"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "firstname"
+      },
+      "text": "testName1"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "add_contact_button"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2500"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "firstname"
+      },
+      "text": "testName2"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "add_contact_button"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2500"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "firstname"
+      },
+      "text": "testName3"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "add_contact_button"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2500"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Contacts"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2500"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/table/tbody/tr[2]/td/input"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/table/tbody/tr[4]/td/input"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/table/tbody/tr[6]/td/input"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "+ More Actions"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='item_container_div']/table/tfoot/tr[3]/td/table/tbody/tr/td[3]/div[5]/div[7]/a/b"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='bodydiv']/span/div[2]/center/select/*/*[.='Last Name']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "input.btn2"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "css selector",
+        "value": "input.inpt_text.standard_input"
+      },
+      "text": "testSurname"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "input.btn2"
+      }
+    },
+    {
+      "type": "assertAlertText",
+      "text": "Are you sure you want to make this change?"
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "dismissAlert"
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/table/tbody/tr[2]/td/input"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/table/tbody/tr[4]/td/input"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//div/table/tbody/tr[6]/td/input"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='item_container_div']/table/tfoot/tr[3]/td/table/tbody/tr/td[3]/div[5]/div/a/b"
+      }
+    },
+    {
+      "type": "assertAlertText",
+      "text": "You are about to delete 3 contacts. Are you sure you want to do this?"
+    }
+  ]
+}

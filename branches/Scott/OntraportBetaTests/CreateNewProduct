@@ -1,0 +1,132 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://app.ontraport.com/login.html"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "username"
+      },
+      "text": "colton@ontraport.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "password"
+      },
+      "text": "5cQdQ7wEnn"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "login_button"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//aside[@id='ussr-chrome-sidebar']/section/nav/ul/li[4]/a[1]/span[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//aside[@id='ussr-chrome-sidebar']/section/nav/ul/li[4]/a[3]/span[4]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//aside[@id='ussr-chrome-sidebar']//span[.='Products']"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2000"
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "id",
+        "value": "ontraport_panel_action_new"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "ontraport_panel_action_new"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2000"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-tab-container']/div[1]/div[2]/div/div/div[1]/div/div/input"
+      },
+      "text": "abc123"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-tab-container']/div[1]/div[2]/div/div/div[2]/div/div/input"
+      },
+      "text": "THEBEST"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-tab-container']/div[1]/div[2]/div/div/div[3]/div/div/input"
+      },
+      "text": "9001"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-tab-container']/div[2]/div[2]/div/div/div[1]/div/div/input"
+      },
+      "text": "9002"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-tab-container']/div[2]/div[2]/div/div/div[2]/div/div/input"
+      },
+      "text": "9003"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@class='ussr-component-tab-container']/div[2]/div[2]/div/div/div[3]/div/div/input"
+      },
+      "text": "1/1/13"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='ussr-chrome-panel-pane']//button[normalize-space(.)='Save']"
+      }
+    }
+  ]
+}

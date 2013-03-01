@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www1.moon-ray.com/v2.4/login_processor.php?pthrough=*4tsgayhgdfga&login=joshua_r_collins@yahoo.com&pass=$P$BwUJn/.jwqpSkydhLB4UOR9kFp/UAa1" />
+<title>SingleEmail</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SingleEmail</td></tr>
+</thead><tbody>
+<!--Make the contact-->
+<tr>
+	<td>open</td>
+	<td>http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstname</td>
+	<td>testName</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastname</td>
+	<td>testSurname</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>testEmail@testEmail.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add_contact_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<!--Create test group-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=create_group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[type=&quot;text&quot;]</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select</td>
+	<td>label=First Name</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[@id='shell']/table/tbody/tr/td[3]/select</td>
+	<td>label=contains</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=span &gt; input.standard_input</td>
+	<td>testName</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=action_btn_Save</td>
+	<td></td>
+</tr>
+<!--Send broadcast email to that group-->
+<tr>
+	<td>click</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[2]/td[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Send E-Mail']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=item_id</td>
+	<td>label=test name</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=topic</td>
+	<td>1-off Test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action_btn_Send_E-mail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;button&quot;]</td>
+	<td></td>
+</tr>
+<!--Check message was broadcasted-->
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>1-off Test</td>
+	<td></td>
+</tr>
+<!--Delete the contacts-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.checkbox.selectionToggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=+ More Actions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='item_container_div']/table/tfoot/tr[3]/td/table/tbody/tr/td[3]/div[5]/div/a/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>You are about to delete 1 contact. Are you sure you want to do this?</td>
+	<td></td>
+</tr>
+<!--Delete the group-->
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='item_container_div']/table/thead/tr/td/table/tbody/tr/td/span[3]/a/font</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action_btn_Delete_Group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure you want to delete this group?</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

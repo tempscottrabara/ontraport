@@ -1,0 +1,120 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Admin"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Field Editor"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Field Editor"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Add a New Section"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Add a New Section"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@id='glist']/li[11]/div/input"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@id='glist']/li[11]/div/input"
+      },
+      "text": "test"
+    },
+    {
+      "type": "waitForText",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@id='glist']/li[11]/div/input"
+      },
+      "text": "test"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@id='glist']/li[10]/div/a[5]"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@id='glist']/li[10]/div/a[3]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@id='glist']/li[10]/div/a[3]"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//span[@id='bodydiv']/span/div[2]/input[1]"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//span[@id='bodydiv']/span/div[2]/input[1]"
+      },
+      "text": "test"
+    },
+    {
+      "type": "waitForText",
+      "locator": {
+        "type": "xpath",
+        "value": "//span[@id='bodydiv']/span/div[2]/input[1]"
+      },
+      "text": "test"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//span[@id='bodydiv']/span/div[2]/input[2]"
+      }
+    }
+  ]
+}

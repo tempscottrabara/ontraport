@@ -1,0 +1,153 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Pages"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "action_btn_New_Landing_Page"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='bodydiv']/span/div[2]/center/table/tbody/tr/td[1]/div"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.side_prop_label"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='bodydiv']/span/div[2]/center/div[1]/table/tbody/tr/td[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "span > div"
+      }
+    },
+    {
+      "type": "doubleClickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='post_maker']/div/center/table/tbody/tr/td[1]/center/div/div[1]/span/div"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "css selector",
+        "value": "html"
+      },
+      "text": "Hello World!"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='Menu_Bar']/div/div/table/tbody/tr[3]/td[1]/div"
+      }
+    },
+    {
+      "type": "switchToWindow",
+      "name": "null"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "css selector",
+        "value": "input.inpt_text.standard_input"
+      },
+      "text": "landpagetest_xinrui"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "name",
+        "value": "domaintype"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "input.btn2"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@type='TEXT']"
+      },
+      "text": "landingpagetest_xinrui"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "(//input[@type='TEXT'])[2]"
+      },
+      "text": "first"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@type='TEXT']"
+      },
+      "text": "landing page"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "input.inpt_button.standard_input"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Autopilot"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Pages"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='item_container_div']/table/tbody/tr[14]/td[1]/a[1]"
+      }
+    }
+  ]
+}

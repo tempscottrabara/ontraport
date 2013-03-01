@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www1.moon-ray.com/v2.4/login_processor.php?pthrough=*4tsgayhgdfga&login=info@sendpepper.com&pass=$P$BiKAOZOfusxVPjdP3QBvtx50XB4kCe." />
+<title>admin_changeFieldPosition</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">admin_changeFieldPosition</td></tr>
+</thead><tbody>
+<!--In the field editor, add a custom "Purchase History" field, then move the default "Purchase History" section and make sure it moves in the contact section as well.-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Field Editor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Add a New Section</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add a New Section</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.inpt_text.standard_input</td>
+	<td>Purchase History</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='glist']/li[14]/div/a[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#group_2 &gt; div.menuitem</td>
+	<td>Purchase History</td>
+</tr>
+<tr>
+	<td>dragAndDrop</td>
+	<td>css=#group_2 &gt; div.menuitem</td>
+	<td>+0, +90</td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Sending Data</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[4]/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[2]/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[8]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[5]</td>
+	<td>Sequences and Tags</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/div[4]</td>
+	<td>Purchase History</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Field Editor</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=#group_3 &gt; div.menuitem &gt; span</td>
+	<td>Purchase History</td>
+</tr>
+</tbody></table>
+</body>
+</html>

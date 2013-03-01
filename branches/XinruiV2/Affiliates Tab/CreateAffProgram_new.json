@@ -1,0 +1,112 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://app.ontraport.com/#!/affiliate_program/listAll"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ontraport_panel_action_new']/span[2]"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div[1]/div/div/input"
+      },
+      "text": "SEL IDE TEST"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div[2]/div/div/*/*/*/*/*/*[.='Require approval of all new affiliates']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div[3]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div[3]/div/div/*/*/*/*/*/*[.='1 Tier']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div[4]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div[4]/div/div/*/*/*/*/*/*[.='Contact Id']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div[5]/div/div/a/span[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div[6]/div/div/a/span[1]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[1]/div[2]/div/div/div[7]/div/div/a/span[1]"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div/input"
+      },
+      "text": "qqq"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div[2]/div[2]/div/div/div[3]/div/div/input"
+      },
+      "text": "18"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[3]/div[1]/div[4]/button[1]"
+      }
+    }
+  ]
+}

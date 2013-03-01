@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www1.moon-ray.com/v2.4/login_processor.php?pthrough=*4tsgayhgdfga&login=joshua_r_collins@yahoo.com&pass=$P$BwUJn/.jwqpSkydhLB4UOR9kFp/UAa1" />
+<title>MessagesCopyFeature</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MessagesCopyFeature</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Messages</td>
+	<td></td>
+</tr>
+<!--create test message-->
+<tr>
+	<td>click</td>
+	<td>id=action_btn_Add_Message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=.//*[@id='bodydiv']/span/div[2]/center/table/tbody/tr/td[1]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=alias</td>
+	<td>test name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=send_out</td>
+	<td>test send out name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=reply_to</td>
+	<td>testEmail@testEmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=topic</td>
+	<td>test subject line</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=test_email_loc</td>
+	<td>testEmail@testEmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=body_plain</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//input[@value='Save E-Mail'])[2]</td>
+	<td></td>
+</tr>
+<!--copy the message-->
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=.//*[@id='message_container_div']/table/tbody/tr[2]/td[1]/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=action_btn_Save_E-Mail</td>
+	<td></td>
+</tr>
+<!--verify copied message-->
+<!--delete messages-->
+<tr>
+	<td>clickAt</td>
+	<td>xpath=//div[@id='message_container_div']/table/tbody/tr[4]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//tr[2]/td/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>//tr[4]/td/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clicks</td>
+	<td>css=a &gt; b</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

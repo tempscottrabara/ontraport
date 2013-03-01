@@ -1,0 +1,132 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "id",
+        "value": "add_contact_button"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "firstname"
+      },
+      "text": "default"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "lastname"
+      },
+      "text": "bulktest"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "add_contact_button"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='item_container_div']/table/tbody/tr[3]/td/div/table[2]/tbody/tr/td[2]/table/tbody/tr[4]/td/span"
+      }
+    },
+    {
+      "type": "assertText",
+      "locator": {
+        "type": "css selector",
+        "value": "span > span > span"
+      },
+      "text": "Yes"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='item_container_div']/table/tbody/tr[3]/td/div/table/tbody/tr/td/table/tbody/tr[5]/td/span"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "(//input[@type='text'])[10]"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "(//input[@type='text'])[10]"
+      },
+      "text": "defaultbulktest@asdioucnsduisldfulduifvbsdlfuvb.com"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='item_container_div']/table/tbody/tr[3]/td/div/table/tbody/tr/td/table/tbody/tr[5]/td[2]/span/a"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "5000"
+    },
+    {
+      "type": "refresh"
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='item_container_div']/table/tbody/tr[4]/td[2]/span"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='item_container_div']/table/tbody/tr[2]/td[2]/span[3]"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='item_container_div']/table/tbody/tr[3]/td/div/table[2]/tbody/tr/td[2]/table/tbody/tr/td/span"
+      }
+    },
+    {
+      "type": "assertText",
+      "locator": {
+        "type": "css selector",
+        "value": "span > span > span"
+      },
+      "text": "Yes"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Delete Contact"
+      }
+    },
+    {
+      "type": "verifyAlertText",
+      "text": "Are you sure you want to delete this contact?"
+    }
+  ]
+}

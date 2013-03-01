@@ -1,0 +1,378 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www.ontraport.com/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='sod-drawer-handle']//div[.='LOGIN']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='loginform']/fieldset/input[1]"
+      },
+      "text": "colton@ontraport.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='loginform']/fieldset/input[2]"
+      },
+      "text": "5cQdQ7wEnn"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='loginform']/input"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Contacts"
+      }
+    },
+    {
+      "type": "get",
+      "url": "http://app.ontraport.com/#!/rule/listAll"
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ontraport_panel_action_new']/span[2]"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ontraport_panel_action_new']/span[2]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[3]/div/div[3]/div/div/div/input"
+      },
+      "text": "SEL TEST"
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[1]/div[2]/div/div[2]/div"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[2]/div"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[3]/div[2]/div/div[2]/div"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[1]/div[2]/div/div[1]/div/div[2]/div[2]/div[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[1]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[2]/div/div/*/*/*/*/*/*[. = 'A Certain field is updated']"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[2]/div/div/*/*/*/*/*/*[. = 'Has been on a sequence for a certain amount of time']"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[3]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[3]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[2]/div/div/*/*/*/*/*/*[. = 'Notify someone with an e-mail']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[1]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[1]/div/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[1]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[1]/div/div/div/*/*/*/*/*/*/*[. = 'Last Name']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[1]/span[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[1]/span[2]/div/div/*/*/*/*/*/*[.='test']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[1]/span[4]/div/div/input"
+      },
+      "text": "1"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[1]/span[6]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[1]/span[6]/div/div/*/*/*/*/*/*[.='Days']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[3]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[1]/span[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[3]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[1]/span[2]/div/div/*/*/*/*/*/*[. = 'Colton Trautz']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[3]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[1]/span[4]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[3]/div[2]/div/div[1]/div[1]/div[2]/div[2]/div[1]/span[4]/div/div/*/*/*/*/*/*[. = 'test']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[1]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[1]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div[2]/div/div/*/*/*/*/*/*[. = 'Opens Email']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div[2]/div/div/*/*/*/*/*/*[. = 'Has clicked an E-Mail link a certain number of times']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[3]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[3]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div[2]/div/div/*/*/*/*/*/*[. = 'Recharge all declined transactions']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div[1]/span[2]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div[1]/span[2]/div/div/*/*/*/*/*/*[. = 'Any E-Mail']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div[1]/span[4]/div/div/input"
+      },
+      "text": "1"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div[1]/span[6]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div[1]/span[6]/div/div/*/*/*/*/*/*[. = 'Greater Than']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[2]/div[2]/div[2]/div[1]/span[8]/div/div/input"
+      },
+      "text": "30"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[2]/div[1]/div/div/button"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[4]/div[1]/div/div/div/div[2]/div[2]/div/div[1]/div[2]/div[1]/div/div/*/*/*/*/*/*[.='OR']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[3]/div/div[4]/button[1]"
+      }
+    },
+    {
+      "type": "waitForTextPresent",
+      "text": "SEL TEST"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ussr-chrome-panel-pane']/div[1]/div[5]/div/div/div/input"
+      },
+      "text": "SEL TEST\n"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='ontraport_panel_action_group_actions']/span[2]"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Delete Rule"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Delete Rule"
+      }
+    },
+    {
+      "type": "assertAlertPresent"
+    }
+  ]
+}

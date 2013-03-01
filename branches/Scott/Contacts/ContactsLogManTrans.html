@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www1.moon-ray.com" />
+<title>ContactsLogManTrans</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ContactsLogManTrans</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/v2.4/autosauce_pthrough.php?key=ruVerU26</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//div[@id='item_container_div']/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[@id='item_container_div']/table/tbody/tr[2]/td[2]/span[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//input[@value='New Transaction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//input[@value='New Transaction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>xpath=(//a[contains(text(),'Add a Product')])[2]</td>
+	<td>Add a Product</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Add a Product')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=productsWidget_id</td>
+	<td>label=Test Product</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productsWidget_quantity</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//input[@value='save']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.floatLeft</td>
+	<td>x3 - Test Product</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=email_invoice</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=//body[@id='contact_manager']/div[9]/div[11]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=//body[@id='contact_manager']/div[9]/div[11]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Void Transaction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyConfirmation</td>
+	<td>Voiding this will zero the purchase amount and reverse any affiliate commissions credited.</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

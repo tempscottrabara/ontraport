@@ -1,0 +1,106 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Admin"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Admin"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Task Outcome Manager"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Task Outcome Manager"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "New Call Outcome"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "New Call Outcome"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "id",
+        "value": "action_btn_Save_Changes"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "action_btn_Save_Changes"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Task Outcome Manager"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "Task Outcome Manager"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[1]/div[1]/table/tbody/tr[1]/td[2]/div/table/tbody/tr[2]/td/div[2]/div/div/div/div/span/ul/li/table/tbody/tr[2]/td[1]/img"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[1]/div[1]/table/tbody/tr[1]/td[2]/div/table/tbody/tr[2]/td/div[2]/div/div/div/div/span/ul/li/table/tbody/tr[2]/td[1]/img"
+      }
+    },
+    {
+      "type": "waitForAlertText",
+      "text": "Are you sure you want to remove this option?"
+    },
+    {
+      "type": "assertAlertText",
+      "text": "Are you sure you want to remove this option?"
+    },
+    {
+      "type": "close"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Contacts"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": ".//*[@id='item_container_div']/table/tbody/tr[4]/td[1]/a[1]"
+      }
+    },
+    {
+      "type": "sendKeysToElement",
+      "locator": {
+        "type": "name",
+        "value": "newfile"
+      },
+      "text": "C:\\Users\\KellyO'Boyle\\Desktop\\4-18-12 Tests-Baker\\affiliates_ create_program_overview.html"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "input.inpt_button.standard_input"
+      }
+    }
+  ]
+}

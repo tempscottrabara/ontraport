@@ -1,0 +1,124 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='item_container_div']/table/tbody/tr[2]/td[2]/span"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='item_container_div']/table/tbody/tr[2]/td[2]/span[3]"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@value='New Transaction']"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@value='New Transaction']"
+      }
+    },
+    {
+      "type": "waitForText",
+      "locator": {
+        "type": "xpath",
+        "value": "(//a[contains(text(),'Add a Product')])[2]"
+      },
+      "text": "Add a Product"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "(//a[contains(text(),'Add a Product')])[2]"
+      }
+    },
+    {
+      "type": "setElementSelected",
+      "locator": {
+        "type": "xpath",
+        "value": "//*[@id='productsWidget_id']/*[. = 'Test Product']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "productsWidget_quantity"
+      },
+      "text": "3"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@value='save']"
+      }
+    },
+    {
+      "type": "waitForText",
+      "locator": {
+        "type": "css selector",
+        "value": "span.floatLeft"
+      },
+      "text": "x3 - Test Product"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "name",
+        "value": "email_invoice"
+      }
+    },
+    {
+      "type": "waitForElementPresent",
+      "locator": {
+        "type": "xpath",
+        "value": "//body[@id='contact_manager']/div[9]/div[11]/div/button[2]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "3000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//body[@id='contact_manager']/div[9]/div[11]/div/button[2]"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Void Transaction"
+      }
+    },
+    {
+      "type": "assertAlertText",
+      "text": "Voiding this will zero the purchase amount and reverse any affiliate commissions credited."
+    }
+  ]
+}

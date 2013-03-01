@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www1.moon-ray.com/" />
+<title>create_new_order_form</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">create_new_order_form</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://officeautopilot.com/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.login &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=login</td>
+	<td>intern@sendpepper.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pass</td>
+	<td>test123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=form &gt; input.submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/v2.4/admin.php?action=user&amp;error=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sales</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Payment Gateways</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/v2.4/sales.php?action=product_manager&amp;show=1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Order Forms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=action_btn_New_Order_Form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=order_form_name</td>
+	<td>Your Dreams</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Add a Product')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=productsWidget_id</td>
+	<td>label=Your Dreams</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.tipsWrapper.col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@value='save'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add a Payment Gateway</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=cart_form_payment_gateway</td>
+	<td>label=New Dummy Gateway</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@value='save'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

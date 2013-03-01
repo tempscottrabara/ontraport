@@ -1,0 +1,53 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://officeautopilot.com"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//ul[@class='login-block']//span[.='Login']"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2000"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "login"
+      },
+      "text": "scottrabara@gmail.com"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "pass"
+      },
+      "text": "q8u8q5cp"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "form > input.submit"
+      }
+    },
+    {
+      "type": "assertText",
+      "locator": {
+        "type": "id",
+        "value": "section_title"
+      },
+      "text": "Contact Overview"
+    }
+  ]
+}

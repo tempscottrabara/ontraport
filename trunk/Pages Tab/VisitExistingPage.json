@@ -1,0 +1,16 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://seleniumtellafriend.viprespond.com/"
+    },
+    {
+      "type": "assertTextPresent",
+      "negated": true,
+      "text": "Oops"
+    }
+  ]
+}

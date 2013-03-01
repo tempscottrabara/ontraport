@@ -1,0 +1,19 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "get",
+      "url": "/"
+    },
+    {
+      "type": "assertTextPresent",
+      "text": "Ooops"
+    }
+  ]
+}

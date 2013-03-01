@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www1.moon-ray.com/v2.4/login_processor.php?pthrough=*4tsgayhgdfga&login=leumasc1@gmail.com&pass=$P$BqAnutfuRZdnX6yL5Vm2Rj9KA/Ku5Y0" />
+<title>ticket4948</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ticket4948</td></tr>
+</thead><tbody>
+<!--Logs a new manual transaction - Made to test ticket # 4948, 3687-->
+<tr>
+	<td>open</td>
+	<td>http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[2]/td[2]/span[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@value='New Transaction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='New Transaction']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>xpath=(//a[contains(text(),'Add a Product')])[2]</td>
+	<td>Add a Product</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Add a Product')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=productsWidget_id</td>
+	<td>label=Test Product</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productsWidget_quantity</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='save']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.floatLeft</td>
+	<td>x3 - Test Subscription Product (no delete!)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=email_invoice</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//body[@id='contact_manager']/div[9]/div[11]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//body[@id='contact_manager']/div[9]/div[11]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Void Transaction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyConfirmation</td>
+	<td>Voiding this will zero the purchase amount and reverse any affiliate commissions credited.</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

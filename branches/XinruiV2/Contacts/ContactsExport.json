@@ -1,0 +1,93 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "input.checkbox.selectionToggle"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "+ More Actions"
+      }
+    },
+    {
+      "type": "waitForText",
+      "locator": {
+        "type": "xpath",
+        "value": "//div[@id='item_container_div']/table/tfoot/tr[3]/td/table/tbody/tr/td[3]/div[5]/div[11]/a/b"
+      },
+      "text": "Export Contacts"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Export Contacts"
+      }
+    },
+    {
+      "type": "assertAlertPresent"
+    },
+    {
+      "type": "pause",
+      "waitTime": "1000"
+    },
+    {
+      "type": "acceptAlert"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "action_btn_Submit"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "20000"
+    },
+    {
+      "type": "refresh"
+    },
+    {
+      "type": "verifyElementPresent",
+      "locator": {
+        "type": "link text",
+        "value": "Click Here to download"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Click Here to download"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "2000"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Your CSV is now ready."
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "dismiss"
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www1.moon-ray.com/v2.4/login_processor.php?pthrough=*4tsgayhgdfga&login=joshua_r_collins@yahoo.com&pass=$P$BwUJn/.jwqpSkydhLB4UOR9kFp/UAa1" />
+<title>SalesCreateUpsellForm</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SalesCreateUpsellForm</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<!--create an order form-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Sales</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Forms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Upsell Forms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=action_btn_New_Upsell_Form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upsell_form_name</td>
+	<td>selenium upsell form</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=r_8227</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=upsell_form_product</td>
+	<td>label=test product</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save</td>
+	<td></td>
+</tr>
+<!--verify and delete-->
+<tr>
+	<td>assertTextPresent</td>
+	<td>selenium upsell form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Form</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

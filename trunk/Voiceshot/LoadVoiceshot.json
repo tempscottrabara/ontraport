@@ -1,0 +1,94 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Admin"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "VoiceShot Admin"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "vs_pass"
+      },
+      "text": "tester"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "vs_user"
+      },
+      "text": "tester"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@value='Update']"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "campaign_name_input"
+      },
+      "text": "test_voiceshot_campaign"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "menu_id_input"
+      },
+      "text": "123"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "campaign_desc_input"
+      },
+      "text": "A test campaign. For testing, clearly."
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "tts_input"
+      },
+      "text": "Hello sir or madam. How was your breakfast cereal this morning? Thank you for participating in this test."
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "css selector",
+        "value": "input.btn2"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "add_campaign_btn"
+      }
+    }
+  ]
+}

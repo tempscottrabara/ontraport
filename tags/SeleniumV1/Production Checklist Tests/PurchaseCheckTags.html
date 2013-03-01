@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www1.moon-ray.com/v2.4/login_processor.php?pthrough=*4tsgayhgdfga&login=info@sendpepper.com&pass=$P$BiKAOZOfusxVPjdP3QBvtx50XB4kCe." />
+<title>sales_addContactTagsWithPurchase</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">sales_addContactTagsWithPurchase</td></tr>
+</thead><tbody>
+<!--Fills out a purchase form which has an active response rule which adds the contact to a sequence and tag, then checks to see if the contact was added to those.  Made to test ticket 4761-->
+<tr>
+	<td>open</td>
+	<td>http://seleniumpurchasetest.viprespond.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstname</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastname</td>
+	<td>contact1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>dummy@thisisntarealemailhopefully.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_address1</td>
+	<td>123 Fake St.</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_address2</td>
+	<td>Apt. -1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=billing_country</td>
+	<td>label=United States</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_zip</td>
+	<td>93117</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=billing_city</td>
+	<td>Goleta</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=billing_state</td>
+	<td>label=California</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=payment_number</td>
+	<td>1234567812345678</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=payment_code</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=payment_number</td>
+	<td>5555555555</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=payment_expire_year</td>
+	<td>label=2024</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.mr-submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Verifying Transaction. Please wait a moment.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Verifying Transaction. Please wait a moment.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyAlert</td>
+	<td>Fail!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://officeautopilot.com/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.login &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=login</td>
+	<td>intern@sendpepper.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pass</td>
+	<td>test123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=form &gt; input.submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=.//*[@id='item_container_div']/table/tbody/tr[12]/td[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/table[3]/tbody/tr/td/table/tbody/tr[2]/td/span</td>
+	<td>Contact Tags:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=.//*[@id='item_container_div']/table/tbody/tr[3]/td/div/table[3]/tbody/tr/td[1]/table/tbody/tr[1]/td[2]/span/span[1]/li</td>
+	<td>Critical Production test</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/table[3]/tbody/tr/td/table/tbody/tr[2]/td[2]/span/span/li</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Contact</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

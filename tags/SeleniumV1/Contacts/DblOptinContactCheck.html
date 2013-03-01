@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://hostedforms.moon-ray.com/1/6837/235/a8a61b8ca5fb32e30b1f8c0dbdbecab9" />
+<title>contacts_test_bulkemail_stable</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">contacts_test_bulkemail_stable</td></tr>
+</thead><tbody>
+<!--Add a double opt-in contact, change their tags and assert their bulk email status is still set to "Double Opt-in" - Made to test ticket 4855-->
+<tr>
+	<td>open</td>
+	<td>http://hostedforms.moon-ray.com/1/6837/235/a8a61b8ca5fb32e30b1f8c0dbdbecab9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mr-field-element-628204562578</td>
+	<td>doubleoptin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mr-field-element-994058546176</td>
+	<td>bulkemailtest</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mr-field-element-931296540997</td>
+	<td>omebys-286@yopmail.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=mr-field-element-111471521077</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=h2.thanks</td>
+	<td>You're almost done. Just one step left...</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www.yopmail.com/en/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=input.sbut</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=login</td>
+	<td>omebys-286@yopmail.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.sbut</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>ifmail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Please Confirm your Subscription</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click Here</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectFrame</td>
+	<td>relative=top</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://www1.moon-ray.com/v2.4/login_processor.php?pthrough=*4tsgayhgdfga&amp;login=leumasc1@gmail.com&amp;pass=$P$BqAnutfuRZdnX6yL5Vm2Rj9KA/Ku5Y0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[2]/td[2]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='item_container_div']/table/tbody/tr[3]/td/div/table[3]/tbody/tr/td/table/tbody/tr/td/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span &gt; span &gt; span</td>
+	<td>Double Opt-in</td>
+</tr>
+</tbody></table>
+</body>
+</html>

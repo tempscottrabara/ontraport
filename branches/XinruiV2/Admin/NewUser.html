@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www1.moon-ray.com" />
+<title>NewUser</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">NewUser</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/v2.4/autosauce_pthrough.php?key=ruVerU26</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Manage Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_firstname</td>
+	<td>new manager</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_lastname</td>
+	<td>M1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_email</td>
+	<td>2222@gmail.com</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>xpath=.//*[@id='role_id']</td>
+	<td>abc</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=//input[@value='Add New User']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Adding a User will cost an extra $47 dollars per month, are you sure you wish to proceed?</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

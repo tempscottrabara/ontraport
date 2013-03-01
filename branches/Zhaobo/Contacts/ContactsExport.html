@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www1.moon-ray.com/v2.4/login_processor.php?pthrough=*4tsgayhgdfga&login=leumasc1@gmail.com&pass=$P$BqAnutfuRZdnX6yL5Vm2Rj9KA/Ku5Y0" />
+<title>ticket4953</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ticket4953</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='2-r-column-head-section$4']/td[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='2-r-column-head-section$4']/td[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='2-r-column-head-section$3']/td[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='2-r-column-head-section$4']/td[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='2-r-column-head-section$4']/td[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='2-r-column-head-section$11']/td[5]</td>
+	<td></td>
+</tr>
+<!--Export a contact and try to download it from the contacts tab.  Made to test ticket #4953-->
+<tr>
+	<td>open</td>
+	<td>http://www1.moon-ray.com/v2.4/autosauce_pthrough.php?key=ruVerU26</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.checkbox.selectionToggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=+ More Actions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='item_container_div']/table/tfoot/tr[3]/td/table/tbody/tr/td[3]/div[5]/div[11]/a/b</td>
+	<td>Export Contacts</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Export Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyConfirmation</td>
+	<td>Are you sure you want to perform this action?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=action_btn_Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>20000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Click Here to download</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click Here to download</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Warning:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Cannot modify header information</td>
+	<td></td>
+</tr>
+<!--^^^^Not really sure what the best way to test for the error is, or if this would even catch it as I couldn't reproduce the error-->
+<tr>
+	<td>click</td>
+	<td>link=dismiss</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
